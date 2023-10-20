@@ -35,12 +35,14 @@ main {
 }
 
 .bookmark1 {
-  display: relative;
+  position: relative;
+  display: inline-block;
 }
 
 .bookmark {
-  display: absolute;
-  right: -100%;
+  position: absolute;
+  right: 0;
+  
 }
 
 .answerButton {

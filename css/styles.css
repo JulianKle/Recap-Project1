@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-inline: 20px;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  background-color: green;
+  z-index: 1;
+}
+
+main {
+  padding-block: 100px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.answerButton {
+}
+
+.flexTag {
+  display: flex;
+  gap: 20px;
+}
+
+.tag {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navIconHP {
+  width: 100%;
+  text-align: center;
+  background-color:papayawhip;
+  font-size: 100px;
+}
+
+.navIcon {
+  height: 100px;
+  width: 100px;
+  justify-self: center;
+  font-size: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}

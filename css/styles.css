@@ -25,6 +25,7 @@ main {
 .card {
   border: 1px solid #ccc;
   padding: 20px;
+  margin: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -33,7 +34,18 @@ main {
   flex-direction: column;
 }
 
+.bookmark {
+  float: right;
+}
+
 .answerButton {
+  width: calc(100% - 550px);
+  align-self: center;
+  font-size: large;
+}
+
+.answerButton:hover {
+  background-color: red;
 }
 
 .flexTag {
@@ -46,6 +58,7 @@ main {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: small;
 }
 
 .navFooter {
@@ -56,15 +69,22 @@ main {
 .navIconHP {
   width: 100%;
   text-align: center;
-  background-color:papayawhip;
+  background-color: papayawhip;
   font-size: 100px;
 }
 
 .navIcon {
-  height: 100px;
-  width: 100px;
-  justify-self: center;
+  width: 100%;
+  text-align: center;
   font-size: 100px;
+}
+
+.navIcon:hover {
+  background-color: aqua;
+}
+
+.navIconHP:hover {
+  background-color: aqua;
 }
 
 footer {

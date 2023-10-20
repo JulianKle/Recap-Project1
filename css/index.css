@@ -34,9 +34,13 @@ main {
   flex-direction: column;
 }
 
+.bookmark1 {
+  display: relative;
+}
+
 .bookmark {
-  float: right;
-  top: 0;
+  display: absolute;
+  right: -100%;
 }
 
 .answerButton {
@@ -74,6 +78,7 @@ main {
   width: 100%;
   text-align: center;
   font-size: 100px;
+  text-decoration: none;
 }
 
 .active {

@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-inline: 20px;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  background-color: green;
+  z-index: 1;
+}
+
+main {
+  padding-block: 100px;
+  display: grid;
+}
+
+.gridMain {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.pb {
+  grid-column: 1 / 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pb1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.name {
+  align-self: center;
+}
+
+.aboutMe {
+  grid-column: 2 / 1;
+}
+
+.counter {
+  grid-column: 3 / 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tag {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: small;
+  width: fit-content;
+}
+
+.settings {
+  grid-column: 4 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+.darkMode {
+  grid-column: 5 / 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.navFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  bottom: 0%;
+  width: calc(100% - 40px);
+}
+
+.navIcon {
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: papayawhip;
+}
+
+.navIcon:hover {
+  background-color: aqua;
+}
+
+.navIconHP:hover {
+  background-color: aqua;
+}
+
+.switch {
+  /* Das label-Element */
+  position: relative; /* Um im nächsten Schritt den runden Button mit position:absolute festzusetzen */
+  width: 64px;
+  height: 34px;
+  display: inline-block;
+}
+
+.switch span {
+  /* Der graue Untergrund des Schalters */
+  position: absolute;
+  background-color: #ccc;
+  border-radius: 17px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.4s;
+}
+
+.switch span::before {
+  /* Der kreisrunde Button im Switch */
+  background-color: white;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  height: 26px;
+  width: 26px;
+}
+
+input:checked + span {
+  background-color: darkgreen;
+}
+
+input:checked + span::before {
+  transform: translateX(30px);
+}
+
+.switch input {
+  display: none;
+}

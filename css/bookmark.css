@@ -64,13 +64,9 @@ main {
 .navFooter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.navIconHP {
-  width: 100%;
-  text-align: center;
-  background-color: papayawhip;
-  font-size: 100px;
+  position: fixed;
+  bottom: 0%;
+  width: calc(100% - 40px);
 }
 
 .navIcon {
@@ -79,16 +75,14 @@ main {
   font-size: 100px;
 }
 
+.active {
+  background-color: papayawhip;
+}
+
 .navIcon:hover {
   background-color: aqua;
 }
 
 .navIconHP:hover {
   background-color: aqua;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0%;
-  width: 100%;
 }

@@ -35,11 +35,11 @@ main {
 }
 
 .bookmark {
-  float: right;
+  float: left;
 }
 
 .answerButton {
-  width: calc(100% - 550px);
+  width: fit-content;
   align-self: center;
   font-size: large;
 }
@@ -87,7 +87,7 @@ main {
   background-color: aqua;
 }
 
-footer {
+.footer {
   position: fixed;
   bottom: 0%;
   width: 100%;

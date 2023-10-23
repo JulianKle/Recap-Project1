@@ -2,7 +2,6 @@
 @import "/css/card.css";
 
 main {
-  padding-block: 100px;
   display: grid;
 }
 

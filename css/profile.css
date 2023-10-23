@@ -157,3 +157,8 @@ input:checked + span::before {
 .switch input {
   display: none;
 }
+
+.dark {
+  background-color: black;
+  color: #eee;
+}

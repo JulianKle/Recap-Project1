@@ -42,7 +42,6 @@ main {
 .bookmark {
   position: absolute;
   right: 0;
-  
 }
 
 .answerButton {
@@ -99,4 +98,9 @@ main {
   position: fixed;
   bottom: 0%;
   width: 100%;
+}
+
+.dark {
+  background-color: black;
+  color: #eee;
 }

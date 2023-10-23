@@ -87,3 +87,8 @@ main {
 .navIconHP:hover {
   background-color: aqua;
 }
+
+.dark {
+  background-color: black;
+  color: #eee;
+}

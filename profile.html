@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/profile.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body data-js="main">
+    <script src="scripts/main.js" defer></script>
     <header>
       <h1>Quiz App</h1>
     </header>
@@ -30,30 +31,31 @@
         <section class="darkMode">
             <p>Dark Mode</p>
             <label class="switch">
-                <input type="checkbox" aria-label="Dark Mode switch">
+                <input type="checkbox" data-js="toggle-button" aria-label="Dark Mode switch">
                 <span></span>	  
             </label>
         </section>
       </section>
 
-      <nav class="navFooter">
-        <a href="/index.html" class="navIcon" aria-label="Link to Homepage"
-          >🏠</a
-        >
-        <a
-          href="/bookmark.html"
-          class="navIcon"
-          aria-label="Link to Bookmark-Page"
-          >🔖</a
-        >
-        <a
-          href="/profile.html"
-          class="navIcon active"
-          aria-label="Link to Profile"
-          >👤</a
-        >
+    
       </nav>
     </main>
+    <nav class="navFooter">
+      <a href="/index.html" class="navIcon" aria-label="Link to Homepage"
+        >🏠</a
+      >
+      <a
+        href="/bookmark.html"
+        class="navIcon"
+        aria-label="Link to Bookmark-Page"
+        >🔖</a
+      >
+      <a
+        href="/profile.html"
+        class="navIcon active"
+        aria-label="Link to Profile"
+        >👤</a
+      >
     <footer></footer>
   </body>
 </html>

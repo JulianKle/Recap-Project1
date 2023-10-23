@@ -1,42 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding-inline: 20px;
-}
-
-header {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 20px;
-  width: calc(100% - 40px);
-  background-color: green;
-  z-index: 1;
-}
-
-main {
-  padding-block: 100px;
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.bookmark {
-  float: left;
-}
+@import "/css/global.css";
+@import "/css/card.css";
+@import "/css/answerButton.css";
 
 .answerButton {
   width: fit-content;
@@ -59,36 +23,4 @@ main {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: small;
-}
-
-.navFooter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  position: fixed;
-  bottom: 0%;
-  width: calc(100% - 40px);
-}
-
-.navIcon {
-  width: 100%;
-  text-align: center;
-  font-size: 100px;
-  text-decoration: none;
-}
-
-.active {
-  background-color: papayawhip;
-}
-
-.navIcon:hover {
-  background-color: aqua;
-}
-
-.navIconHP:hover {
-  background-color: aqua;
-}
-
-.dark {
-  background-color: black;
-  color: #eee;
 }

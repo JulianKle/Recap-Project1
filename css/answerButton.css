@@ -1,0 +1,9 @@
+.answerButton {
+  width: fit-content;
+  align-self: center;
+  font-size: large;
+}
+
+.answerButton:hover {
+  background-color: red;
+}

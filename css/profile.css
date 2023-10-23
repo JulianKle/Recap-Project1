@@ -1,22 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding-inline: 20px;
-}
-
-header {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 20px;
-  width: calc(100% - 40px);
-  background-color: green;
-  z-index: 1;
-}
+@import "/css/global.css";
+@import "/css/card.css";
 
 main {
   padding-block: 100px;
@@ -53,15 +36,6 @@ main {
   justify-content: space-evenly;
 }
 
-.tag {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: small;
-  width: fit-content;
-}
-
 .settings {
   grid-column: 4 / 1;
   display: flex;
@@ -72,45 +46,6 @@ main {
   grid-column: 5 / 1;
   display: flex;
   justify-content: space-evenly;
-}
-
-.card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.navFooter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  position: fixed;
-  bottom: 0%;
-  width: calc(100% - 40px);
-}
-
-.navIcon {
-  width: 100%;
-  text-align: center;
-  font-size: 100px;
-  text-decoration: none;
-}
-
-.active {
-  background-color: papayawhip;
-}
-
-.navIcon:hover {
-  background-color: aqua;
-}
-
-.navIconHP:hover {
-  background-color: aqua;
 }
 
 .switch {
@@ -156,9 +91,4 @@ input:checked + span::before {
 
 .switch input {
   display: none;
-}
-
-.dark {
-  background-color: black;
-  color: #eee;
 }

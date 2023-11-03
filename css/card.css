@@ -12,12 +12,13 @@
 
 .bookmark1 {
   position: relative;
-  display: inline-block;
 }
 
-.bookmark {
+.bookmark-click {
   position: absolute;
-  right: 0;
+  right: -2.5%;
+  bottom: -35px;
+  font-size: 30px;
 }
 
 .bookmark:hover {

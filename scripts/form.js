@@ -1,7 +1,9 @@
 const submitButton = document.querySelector('[data-js="submitButton"]');
 const form = document.querySelector('[data-js="formNewCards"]');
 const counterField = document.querySelector('[data-js="characterCounter"]');
+const counterField1 = document.querySelector('[data-js="characterCounter1"]');
 const yourQuestion = document.querySelector('[data-js="yourQuestion"]');
+const yourAnswer = document.querySelector('[data-js="yourAnswer"]');
 const maxLength = yourQuestion.getAttribute("maxlength");
 
 form.addEventListener("submit", (event) => {
@@ -38,6 +40,11 @@ function calculate(length) {
   const count = maxLength - length;
   return count;
 }
+
+yourAnswer.addEventListener("input", () => {
+  const counter = calculate(yourAnswer.value.length);
+  counterField1.textContent = `${counter} characters left`;
+});
 
 yourQuestion.addEventListener("input", () => {
   const counter = calculate(yourQuestion.value.length);

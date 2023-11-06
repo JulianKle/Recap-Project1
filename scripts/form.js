@@ -6,6 +6,8 @@ const yourQuestion = document.querySelector('[data-js="yourQuestion"]');
 const yourAnswer = document.querySelector('[data-js="yourAnswer"]');
 const maxLength = yourQuestion.getAttribute("maxlength");
 
+// Umwandeln der Eingabedaten in Objekt + Generieren und Hinzufügen der Karte
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -32,14 +34,15 @@ form.addEventListener("submit", (event) => {
 </article>`;
   document.body.append(newCard);
 });
-// yourQuestion.addEventListener("input", (event) => {
-//  console.log(yourQuestion.innerText);
-// });
+
+//Funktion calculator
 
 function calculate(length) {
   const count = maxLength - length;
   return count;
 }
+
+//Eventlistener zum Abrufen der Funktion + Veränderungen des Display Textes bei Eingabe von Input für Question- und Answer-Box
 
 yourAnswer.addEventListener("input", () => {
   const counter = calculate(yourAnswer.value.length);
